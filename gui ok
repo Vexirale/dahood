@@ -1,10 +1,10 @@
 -- fuck it me and the homies love open source
 -- made by swich tho
 
-local bruvwhatulookingat = Instance.new("ScreenGui")
+local dhthing = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local ugh = Instance.new("TextLabel")
 local inf = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local seller = Instance.new("TextButton")
@@ -13,16 +13,22 @@ local unban = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local autofarm = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local close = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
-bruvwhatulookingat.Name = "bruv what u looking at"
-bruvwhatulookingat.Parent = game.CoreGui
-bruvwhatulookingat.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-bruvwhatulookingat.ResetOnSpawn = false
+--Properties:
+
+dhthing.Name = "dhthing"
+dhthing.Parent = game.CoreGui
+dhthing.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+dhthing.ResetOnSpawn = false
 
 main.Name = "main"
-main.Parent = bruvwhatulookingat
+main.Parent = dhthing
+main.Active = true
 main.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-main.Position = UDim2.new(0.312871277, 0, 0.32410422, 0)
+main.Draggable = true
+main.Position = UDim2.new(0.448514819, -150, 0.286644936, 23)
 main.Size = UDim2.new(0, 404, 0, 216)
 main.Active = true
 main.Draggable = true
@@ -30,17 +36,18 @@ main.Draggable = true
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = main
 
-TextLabel.Parent = main
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.0496428832, 0, 0, 0)
-TextLabel.Size = UDim2.new(0.904865026, 0, 0.172093019, 0)
-TextLabel.Font = Enum.Font.Ubuntu
-TextLabel.Text = "Poo poo da hood hub ok"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+ugh.Name = "ugh"
+ugh.Parent = main
+ugh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ugh.BackgroundTransparency = 1.000
+ugh.Position = UDim2.new(0.163504288, 0, 0, 0)
+ugh.Size = UDim2.new(0.669135749, 0, 0.172093019, 0)
+ugh.Font = Enum.Font.Ubuntu
+ugh.Text = "Da Hood script library "
+ugh.TextColor3 = Color3.fromRGB(255, 255, 255)
+ugh.TextScaled = true
+ugh.TextSize = 14.000
+ugh.TextWrapped = true
 
 inf.Name = "inf"
 inf.Parent = main
@@ -56,6 +63,7 @@ inf.TextWrapped = true
 inf.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
+
 
 UICorner_2.Parent = inf
 
@@ -91,6 +99,7 @@ unban.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/nighter132/Faded/main/YesEpic", true))()
 end)
 
+
 UICorner_4.Parent = unban
 
 autofarm.Name = "autofarm"
@@ -109,3 +118,168 @@ autofarm.MouseButton1Down:connect(function()
 end)
 
 UICorner_5.Parent = autofarm
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(185, 0, 0)
+close.Position = UDim2.new(0.898652732, 0, 0, 0)
+close.Size = UDim2.new(0.100409783, 0, 0.152192727, 0)
+close.Font = Enum.Font.Ubuntu
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+
+UICorner_6.Parent = close
+
+-- Scripts:
+
+local function TFQGWFM_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	local main = script.Parent.Parent.Parent.main
+	local auto = script.Parent.Parent.autofarm
+	local inf = script.Parent.Parent.inf
+	local sell = script.Parent.Parent.seller
+	local unban = script.Parent.Parent.unban
+	local close = script.Parent.Parent.close
+	local ugh = script.Parent.Parent.ugh
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.byebye:Play()
+		wait(0.1)
+		main.BackgroundTransparency = 0.1
+		auto.BackgroundTransparency = 0.1
+		auto.TextTransparency = 0.1
+		inf.BackgroundTransparency = 0.1
+		inf.TextTransparency = 0.1
+		sell.BackgroundTransparency = 0.1
+		sell.TextTransparency = 0.1
+		unban.BackgroundTransparency = 0.1
+		unban.TextTransparency = 0.1
+		close.BackgroundTransparency = 0.1
+		close.TextTransparency = 0.1
+		ugh.TextTransparency = 0.1
+		wait(0.1)
+		main.BackgroundTransparency = 0.2
+		auto.BackgroundTransparency = 0.2
+		auto.TextTransparency = 0.2
+		inf.BackgroundTransparency = 0.2
+		inf.TextTransparency = 0.2
+		sell.BackgroundTransparency = 0.2
+		sell.TextTransparency = 0.2
+		unban.BackgroundTransparency = 0.2
+		unban.TextTransparency = 0.2
+		close.BackgroundTransparency = 0.2
+		close.TextTransparency = 0.2
+		ugh.TextTransparency = 0.2
+		wait(0.1)
+		main.BackgroundTransparency = 0.3
+		auto.BackgroundTransparency = 0.3
+		auto.TextTransparency = 0.3
+		inf.BackgroundTransparency = 0.3
+		inf.TextTransparency = 0.3
+		sell.BackgroundTransparency = 0.3
+		sell.TextTransparency = 0.3
+		unban.BackgroundTransparency = 0.3
+		unban.TextTransparency = 0.3
+		close.BackgroundTransparency = 0.3
+		close.TextTransparency = 0.3
+		ugh.TextTransparency = 0.3
+		wait(0.1)
+		main.BackgroundTransparency = 0.4
+		auto.BackgroundTransparency = 0.4
+		auto.TextTransparency = 0.4
+		inf.BackgroundTransparency = 0.4
+		inf.TextTransparency = 0.4
+		sell.BackgroundTransparency = 0.4
+		sell.TextTransparency = 0.4
+		unban.BackgroundTransparency = 0.4
+		unban.TextTransparency = 0.4
+		close.BackgroundTransparency = 0.4
+		close.TextTransparency = 0.4
+		ugh.TextTransparency = 0.4
+		wait(0.1)
+		main.BackgroundTransparency = 0.5
+		auto.BackgroundTransparency = 0.5
+		auto.TextTransparency = 0.5
+		inf.BackgroundTransparency = 0.5
+		inf.TextTransparency = 0.5
+		sell.BackgroundTransparency = 0.5
+		sell.TextTransparency = 0.5
+		unban.BackgroundTransparency = 0.5
+		unban.TextTransparency = 0.5
+		close.BackgroundTransparency = 0.5
+		close.TextTransparency = 0.5
+		ugh.TextTransparency = 0.5
+		wait(0.1)
+		main.BackgroundTransparency = 0.6
+		auto.BackgroundTransparency = 0.6
+		auto.TextTransparency = 0.6
+		inf.BackgroundTransparency = 0.6
+		inf.TextTransparency = 0.6
+		sell.BackgroundTransparency = 0.6
+		sell.TextTransparency = 0.6
+		unban.BackgroundTransparency = 0.6
+		unban.TextTransparency = 0.6
+		close.BackgroundTransparency = 0.6
+		close.TextTransparency = 0.6
+		ugh.TextTransparency = 0.6
+		wait(0.1)
+		main.BackgroundTransparency = 0.7
+		auto.BackgroundTransparency = 0.7
+		auto.TextTransparency = 0.7
+		inf.BackgroundTransparency = 0.7
+		inf.TextTransparency = 0.7
+		sell.BackgroundTransparency = 0.7
+		sell.TextTransparency = 0.7
+		unban.BackgroundTransparency = 0.7
+		unban.TextTransparency = 0.7
+		close.BackgroundTransparency = 0.7
+		close.TextTransparency = 0.7
+		ugh.TextTransparency = 0.7
+		wait(0.1)
+		main.BackgroundTransparency = 0.8
+		auto.BackgroundTransparency = 0.8
+		auto.TextTransparency = 0.8
+		inf.BackgroundTransparency = 0.8
+		inf.TextTransparency = 0.8
+		sell.BackgroundTransparency = 0.8
+		sell.TextTransparency = 0.8
+		unban.BackgroundTransparency = 0.8
+		unban.TextTransparency = 0.8
+		close.BackgroundTransparency = 0.8
+		close.TextTransparency = 0.8
+		ugh.TextTransparency = 0.8
+		wait(0.1)
+		main.BackgroundTransparency = 0.9
+		auto.BackgroundTransparency = 0.9
+		auto.TextTransparency = 0.9
+		inf.BackgroundTransparency = 0.9
+		inf.TextTransparency = 0.9
+		sell.BackgroundTransparency = 0.9
+		sell.TextTransparency = 0.9
+		unban.BackgroundTransparency = 0.9
+		unban.TextTransparency = 0.9
+		close.BackgroundTransparency = 0.9
+		close.TextTransparency = 0.9
+		ugh.TextTransparency = 0.9
+		wait(0.1)	
+		main.BackgroundTransparency = 1
+		auto.BackgroundTransparency = 1
+		auto.TextTransparency = 1
+		inf.BackgroundTransparency = 1
+		inf.TextTransparency = 1
+		sell.BackgroundTransparency = 1
+		sell.TextTransparency = 1
+		unban.BackgroundTransparency = 1
+		unban.TextTransparency = 1
+		close.BackgroundTransparency = 1
+		close.TextTransparency = 1
+		ugh.TextTransparency = 1
+		wait(1)
+		script.Parent.Parent.Parent.Parent.dhthing:Destroy()
+	end)
+end
+coroutine.wrap(TFQGWFM_fake_script)()
+
