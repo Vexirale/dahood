@@ -130,14 +130,7 @@ close.TextColor3 = Color3.fromRGB(255, 255, 255)
 close.TextScaled = true
 close.TextSize = 14.000
 close.TextWrapped = true
-
-UICorner_6.Parent = close
-
--- Scripts:
-
-local function TFQGWFM_fake_script() -- close.LocalScript 
-	local script = Instance.new('LocalScript', close)
-
+close.MouseButton1Down:connect(function()
 	local main = script.Parent.Parent.Parent.main
 	local auto = script.Parent.Parent.autofarm
 	local inf = script.Parent.Parent.inf
@@ -280,6 +273,6 @@ local function TFQGWFM_fake_script() -- close.LocalScript
 		wait(1)
 		script.Parent.Parent.Parent.Parent.dhthing:Destroy()
 	end)
-end
-coroutine.wrap(TFQGWFM_fake_script)()
+end)
 
+UICorner_6.Parent = close
